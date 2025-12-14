@@ -1066,7 +1066,7 @@ Header.InputBegan:Connect(function(input)
             end
         end)
     end
-end
+end)
 
 Header.InputChanged:Connect(function(input)
     if input.UserInputType == Enum.UserInputType.MouseMovement then
