@@ -37,7 +37,7 @@ local Library = {
     RiskColor = Color3.fromRGB(255, 50, 50),
 
     Black = Color3.new(0, 0, 0);
-    Font = Enum.Font.Code,
+    Font = Enum.Font.ArialBold,
 
     OpenedFrames = {};
     DependencyBoxes = {};
@@ -2971,11 +2971,13 @@ function Library:CreateWindow(...)
     });
 
     Library:MakeDraggable(Outer, 25);
-
+    local Testing = Instance.new('UICorner',Outer)
+    Testing.Name = "Hello its me!"
+    Testing.CornerRadius = Udim.new(0,5)
+    
     local Inner = Library:Create('Frame', {
         BackgroundColor3 = Library.MainColor;
-        BorderColor3 = Library.AccentColor;
-        BorderMode = Enum.BorderMode.Inset;
+        BorderSizePixel = 0;
         Position = UDim2.new(0, 1, 0, 1);
         Size = UDim2.new(1, -2, 1, -2);
         ZIndex = 1;
