@@ -2973,7 +2973,7 @@ function Library:CreateWindow(...)
     Library:MakeDraggable(Outer, 25);
     local Testing = Instance.new('UICorner',Outer)
     Testing.Name = "Hello its me!"
-    Testing.CornerRadius = Udim.new(0,5)
+    Testing.CornerRadius = UDim.new(0,5)
     
     local Inner = Library:Create('Frame', {
         BackgroundColor3 = Library.MainColor;
